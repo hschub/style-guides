@@ -1,2 +1,3 @@
-# styleguides
-Atomi coding styleguides
+# Atomi coding styleguides
+
+* [JavaScript](javascript.md)
