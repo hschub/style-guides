@@ -37,11 +37,11 @@
 * Always destructure props and state?
 * How we `import` and `export` modules, i.e., always named or always default? And whether we always have an `index.js` in every component/domain folder, e.g.:
 
- ```bash
- /Button
-  _Button.scss
-  Button.js
-  Button.stories.js
-  Button.test.js
-  index.js
- ```
+  ```bash
+  /Button
+    _Button.scss
+    Button.js
+    Button.stories.js
+    Button.test.js
+    index.js
+  ```
