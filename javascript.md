@@ -1,7 +1,10 @@
 # JavaScript style guide
 
-## Naming
+We extend [Airbnb's JavaScript Style Guide](https://github.com/airbnb/javascript).
 
+## Naming Conventions
+
+* [Airbnb's naming conventions](https://github.com/airbnb/javascript#naming-conventions).
 * Boolean variables should be prefixed with "is" to emphasise the fact that they are boolean.
 
   **Good:**
@@ -50,7 +53,7 @@
   };
   ```
 
-### To determine
+## To determine
 
 * Always destructure props and state?
 * How we `import` and `export` modules, i.e., always named or always default? And whether we always have an `index.js` in every component/domain folder, e.g.:
