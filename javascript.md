@@ -1,5 +1,23 @@
 # JavaScript style guide
 
+## Naming
+
+* Boolean variables should be prefixed with "is" to emphasise the fact that they are boolean.
+
+  **Good:**
+  
+  ```js
+  const isAdmin = userRoles.accountAdmin;
+  const isRetailStudent = userRoles.accountRetailStudent;
+  ```
+ 
+  **Bad:**
+  
+  ```js
+  const userAdmin = userRoles.accountAdmin;
+  const userRetailStudent = userRoles.accountRetailStudent;
+  ```
+
 ## React
 
 * Order props and state alphabetically, however, for props have the required props come first.
