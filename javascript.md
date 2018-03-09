@@ -8,14 +8,14 @@ We extend [Airbnb's JavaScript Style Guide](https://github.com/airbnb/javascript
 * Boolean variables should be prefixed with "is" to emphasise the fact that they are boolean.
 
   **Good:**
-  
+
   ```js
   const isAdmin = userRoles.accountAdmin;
   const isRetailStudent = userRoles.accountRetailStudent;
   ```
- 
+
   **Bad:**
-  
+
   ```js
   const userAdmin = userRoles.accountAdmin;
   const userRetailStudent = userRoles.accountRetailStudent;
@@ -23,25 +23,25 @@ We extend [Airbnb's JavaScript Style Guide](https://github.com/airbnb/javascript
 
 ## React
 
-* Order props and state alphabetically, however, for props have the required props come first.
+* Order props and state alphabetically.
 
-  **ESLint rule:** _coming soon…_
+  **ESLint rule:** [flowtype/sort-keys](https://github.com/gajus/eslint-plugin-flowtype/blob/master/.README/rules/sort-keys.md)
 
   **Good:**
-  
+
   ```js
   type Props = {
-    message: string,
-    type: 'info' | 'success' | 'warning' | 'error',
     actionButtonLabel?: Children,
     id?: string | number,
     onActionButtonClick?: Function,
     onDismiss?: Function,
+    message: string,
+    type: "info" | "success" | "warning" | "error"
   };
   ```
- 
+
   **Bad:**
-  
+
   ```js
   type Props = {
     actionButtonLabel?: Children,
@@ -49,7 +49,7 @@ We extend [Airbnb's JavaScript Style Guide](https://github.com/airbnb/javascript
     message: string,
     onActionButtonClick?: Function,
     onDismiss?: Function,
-    type: 'info' | 'success' | 'warning' | 'error',
+    type: "info" | "success" | "warning" | "error"
   };
   ```
 
