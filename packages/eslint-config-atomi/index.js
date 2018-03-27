@@ -34,11 +34,11 @@ module.exports = {
     'import/no-named-as-default': 0,
     'import/no-dynamic-require': 0,
     'import/extensions': 0,
-    'import-order-autofix/order': [
+    'import/order': [
       // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md
       2,
       {
-        groups: [['builtin', 'external'], ['internal', 'parent', 'sibling', 'index']],
+        groups: [['builtin', 'external'], 'internal', ['parent', 'sibling', 'index']],
         'newlines-between': 'always'
       }
     ],
