@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ['import', 'jest', 'flowtype'],
+  plugins: ['import', 'jest', 'flowtype', 'import-order-autofix'],
   root: true,
   parser: 'babel-eslint',
   extends: ['airbnb', 'prettier', 'plugin:flowtype/recommended'],
@@ -34,6 +34,14 @@ module.exports = {
     'import/no-named-as-default': 0,
     'import/no-dynamic-require': 0,
     'import/extensions': 0,
+    'import-order-autofix/order': [
+      // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md
+      2,
+      {
+        groups: [['builtin', 'external'], ['internal', 'parent', 'sibling', 'index']],
+        'newlines-between': 'always'
+      }
+    ],
     'react/no-array-index-key': 0,
     'react/jsx-filename-extension': 0,
     'react/jsx-indent': 0,
