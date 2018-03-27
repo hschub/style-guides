@@ -1,7 +1,7 @@
 module.exports = {
   parser: 'babel-eslint',
   extends: ['airbnb', 'prettier', 'plugin:flowtype/recommended'],
-  plugins: ['import', 'jest', 'flowtype', 'import-order-autofix'],
+  plugins: ['import', 'jest', 'flowtype'],
   rules: {
     quotes: [2, 'single', { avoidEscape: true, allowTemplateLiterals: true }],
     'no-unused-vars': [2, { ignoreRestSiblings: true }],
