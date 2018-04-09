@@ -1,8 +1,8 @@
 {
-  "name": "eslint-config-atomi",
+  "name": "style-guides",
   "version": "0.1.0",
   "description": "Atomi's ESLint config, following our style guide",
-  "main": ".eslintrc.js",
+  "main": "index.js",
   "scripts": {
     "test": "eslint --fix ."
   },
