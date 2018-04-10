@@ -54,7 +54,6 @@ module.exports = {
     'react/no-find-dom-node': 0,
     'react/require-default-props': 0,
     'react/no-typos': 1,
-    'jsx-a11y/no-static-element-interactions': 0,
     'no-underscore-dangle': 0,
     'no-unused-expressions': [1, { allowTernary: true }],
 
