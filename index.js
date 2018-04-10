@@ -66,5 +66,8 @@ module.exports = {
     // flow
     'flowtype/sort-keys': 2,
     'flowtype/space-after-type-colon': [2, 'always', { allowLineBreak: true }]
-  }
+  },
+  settings: {
+    filename: module.filename,
+  },
 };
