@@ -1,17 +1,9 @@
 module.exports = {
-  plugins: ['import', 'jest', 'flowtype'],
-  root: true,
   parser: 'babel-eslint',
   extends: ['airbnb', 'prettier', 'plugin:flowtype/recommended'],
+  plugins: ['import', 'jest', 'flowtype'],
   rules: {
-    quotes: [
-      2,
-      'single',
-      {
-        avoidEscape: true,
-        allowTemplateLiterals: true
-      }
-    ],
+    quotes: [2, 'single', { avoidEscape: true, allowTemplateLiterals: true }],
     'no-unused-vars': [2, { ignoreRestSiblings: true }],
     'no-restricted-syntax': [2, 'WithStatement'],
     'no-prototype-builtins': 0,
@@ -34,6 +26,14 @@ module.exports = {
     'import/no-named-as-default': 0,
     'import/no-dynamic-require': 0,
     'import/extensions': 0,
+    'import/order': [
+      // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md
+      2,
+      {
+        groups: [['builtin', 'external'], 'internal', ['parent', 'sibling', 'index']],
+        'newlines-between': 'always'
+      }
+    ],
     'react/no-array-index-key': 0,
     'react/jsx-filename-extension': 0,
     'react/jsx-indent': 0,
