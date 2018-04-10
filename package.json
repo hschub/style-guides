@@ -1,6 +1,6 @@
 {
   "name": "style-guides",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Atomi's ESLint config, following our style guide",
   "main": "index.js",
   "scripts": {
