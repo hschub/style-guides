@@ -1,6 +1,6 @@
 # JavaScript style guide
 
-We extend [Airbnb's JavaScript Style Guide](https://github.com/airbnb/javascript).
+We extend [Airbnb's JavaScript Style Guide](https://github.com/airbnb/javascript). The complete ESLint config is [here](https://github.com/hschub/eslint-config-atomi).
 
 ## Naming Conventions
 
